@@ -61,7 +61,7 @@ p {
 /* Container de Cards */
 .container-cards {
     position: absolute;
-    top: 75%;
+    top: 80%; /* Ajuste a posição para não sobrepor o título */
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
@@ -69,6 +69,7 @@ p {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; /* Para os cards se ajustarem quando necessário */
 }
 
 /* Estilo do Card */
@@ -184,6 +185,7 @@ p {
 
     .container-cards {
         width: 95%; 
+        top: 80%; 
     }
 
     .card {
